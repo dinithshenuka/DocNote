@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dinith.docapp.Controllers.FirstStageController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Pulse Medical Centre" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="200.0" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToNew" text="New" />
+            <Button mnemonicParsing="false" onAction="#switchToExisting" text="Exsisiting" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
