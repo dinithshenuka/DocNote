@@ -17,6 +17,7 @@ public class NewPatientController {
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/FirstStage.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        scene.getStylesheets().add("Style.css");
         stage.setScene(scene);
         stage.show();
     }

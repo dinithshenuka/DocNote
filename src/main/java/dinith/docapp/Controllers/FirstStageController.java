@@ -20,6 +20,7 @@ public class FirstStageController {
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/NewPatient.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        scene.getStylesheets().add("Style.css");
         stage.setScene(scene);
         stage.show();
     }
@@ -29,6 +30,7 @@ public class FirstStageController {
         Parent root = FXMLLoader.load(getClass().getResource("/FXML/ExistingPatient.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        scene.getStylesheets().add("Style.css");
         stage.setScene(scene);
         stage.show();
     }
