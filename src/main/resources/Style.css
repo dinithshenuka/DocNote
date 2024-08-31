@@ -4,7 +4,7 @@
 
 /* logo container */
 .first_stage_logo_container{
-    -fx-background-color: #021526;
+    -fx-background-color: #05081C;
     -fx-alignment: center;
 }
 
@@ -24,11 +24,12 @@
 }
 
 .first_stage_option_container Button{
-    -fx-background-color:#021526;
-    -fx-border-color: #021526;
+    -fx-background-color:#05081C;
+    -fx-border-color: #05081C;
     -fx-border-width: 2px;
     -fx-border-radius: 0;
     -fx-text-fill: #FFFFFF;
     -fx-padding: 7px;
-    -fx-pref-width: 300px;
+    -fx-pref-width: 250px;
 }
+
