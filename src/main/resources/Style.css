@@ -1,4 +1,34 @@
 .root{
-    -fx-background-color: Lightgreen;
+    -fx-background-color: #EEEEEE;
 }
 
+/* logo container */
+.first_stage_logo_container{
+    -fx-background-color: #021526;
+    -fx-alignment: center;
+}
+
+.first_stage_logo_container Text {
+    -fx-font-size: 0.8em;
+    -fx-fill: #FFFFFF;
+}
+
+#pulse_text{
+    -fx-font-size: 1.2em;
+}
+
+
+/* new/existing container */
+.first_stage_option_container{
+    -fx-alignment: center;
+}
+
+.first_stage_option_container Button{
+    -fx-background-color:#021526;
+    -fx-border-color: #021526;
+    -fx-border-width: 2px;
+    -fx-border-radius: 0;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 7px;
+    -fx-pref-width: 300px;
+}

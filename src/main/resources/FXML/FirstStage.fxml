@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dinith.docapp.Controllers.FirstStageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dinith.docapp.Controllers.FirstStageController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="200.0">
+      <VBox prefHeight="400.0" prefWidth="200.0" styleClass="first_stage_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" text="Pulse Medical Centre" textAlignment="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/RedCross.png" />
+               </image>
+            </ImageView>
+            <Text id="pulse_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Pulse Medical Centre" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dr. W. P. Semini Fernando " />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(MBBS, UOK)" />
          </children>
       </VBox>
-      <VBox layoutX="200.0" prefHeight="400.0" prefWidth="400.0">
+      <VBox layoutX="200.0" prefHeight="350.0" prefWidth="350.0" styleClass="first_stage_option_container" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#switchToNew" text="New" />
-            <Button mnemonicParsing="false" onAction="#switchToExisting" text="Exsisiting" />
+            <Button mnemonicParsing="false" onAction="#switchToNew" text="New Patient">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#switchToExisting" text="Existing Patient">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></Button>
          </children>
       </VBox>
    </children>

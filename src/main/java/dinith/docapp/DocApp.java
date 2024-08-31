@@ -14,7 +14,7 @@ public class DocApp extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(DocApp.class.getResource("/FXML/FirstStage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         scene.getStylesheets().add("Style.css");
-        stage.setTitle("DocApp");
+        stage.setTitle("Doc Note");
         stage.setScene(scene);
         stage.show();
     }
